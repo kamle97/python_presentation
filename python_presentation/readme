@@ -1,0 +1,37 @@
+Python presentation package created by Kamil Lesiak
+
+Readme file describes v 1.0 (february 2019)
+
+Readme file:
+1. To import package use standard python import :
+    from python_presentation import *
+2. Package is using the elements from libraries:
+    - warnings
+    - fpdf
+    - pptx
+it is recommended to add these libraries to the python interpreter to avoid conflicts in particular functions or during code execution.
+3. Packages are organized in the following way:
+- python_presentation
+    o PythonPresentation.py - includes all possibilities to work on slides
+    o Slide.py - class that includes slide properties with the contant
+    o readme - file you're reading
+    - Content - classes responsible for various types of data inside each slide:
+        o Footer.py
+        o Image.py
+        o SlideText.py
+        o Subtitle.py
+        o Title.py
+        - Details - other details that takes effect on elements from Content subpackage
+            o RGBColor.py
+
+4. Example use:
+    4.1 Create python_presentation object, it will be main presentation object that is possible to contains Slides
+    and export them to pdf or pptx format
+    4.2 Slide creation - using Slide class you can create content of the presentation,
+    every slide can contain element such as: Title, Subtitle, Image, SlideText and Footer
+    4.3 Content - each element has a few possibilities to set, constructors inside each class are described for more details
+    4.4 add_slides and add_slides_from_list functions - there are functions inside python_presentation class,
+    these functions are allowing to append the slide to slide list
+    4.5 export options - there are methods: export_presentation_to_pptx and export_presentation_to_pdf
+    that are responsible for export, there are optional argument "slides" where you can point out (with boolean true values)
+    which slides you want to export
