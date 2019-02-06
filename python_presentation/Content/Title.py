@@ -41,3 +41,5 @@ class Title(object):
             self.vertical_value = 15
         elif self.vertical == "B":
             self.vertical_value = 130
+        else:
+            self.vertical = "C"

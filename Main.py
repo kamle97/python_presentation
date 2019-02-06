@@ -29,6 +29,7 @@ def slides_creation():
         title=Title("Na tym slajdzie jest trzeci obrazek", text_color=RGBColor(g=255), vertical="T"),
         image=Image("pictt.jpg"))
     presentation.add_slides(slide_with_image, slide_with_image2, slide_with_image3)
+    slide = Slide(image=Image(filename="dadada"))
 
 
 def main():

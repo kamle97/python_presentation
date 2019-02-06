@@ -40,3 +40,5 @@ class Subtitle(object):
             self.vertical_value = 30
         elif self.vertical == "B":
             raise AttributeError("Cannot set \"B\" (Bottom) position of a subtitle, use footer instead")
+        else:
+            self.vertical = "C"
